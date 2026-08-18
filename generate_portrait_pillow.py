@@ -26,7 +26,7 @@ import html
 from PIL import Image, ImageOps, ImageFilter
 
 # ---- The ramp: dark -> light. Trailing space clears background to nothing. ----
-RAMP = "@%#sc*+=-:.` "  # index 0 = darkest, last = space (lightest)
+RAMP = " `.:-=+*cs#%@"  # index 0 = darkest, last = space (lightest)
 
 # Grid geometry the guide bakes in: advance width exactly 0.600 em.
 FONT_SIZE = 12.9
