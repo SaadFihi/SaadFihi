@@ -49,9 +49,8 @@ def load_and_prep(path):
     return img.convert("L")
 
 
-def enhance(gray, gamma):
-    from PIL import ImageOps as _IO
-    gray = _IO.invert(gray)          # flip: dark<->light
+def enhance(gray, gamma):          
+    # flip: dark<->light
     # Smoothing: soften skin noise while keeping overall shape.
     g = gray.filter(ImageFilter.SMOOTH)
     # Autocontrast: stretch the tonal range (global stand-in for CLAHE).
