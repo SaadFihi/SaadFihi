@@ -32,7 +32,7 @@ RAMP = " `.:-=+*cs#%@"  # index 0 = darkest, last = space (lightest)
 FONT_SIZE = 12.9
 CHAR_W = 7.74          # 0.600 * 12.9
 LINE_H = FONT_SIZE
-CHAR_ASPECT = 0.55     # rows = cols * (h/w) * 0.48 (mono chars ~2x tall as wide)
+CHAR_ASPECT = 0.60     # rows = cols * (h/w) * 0.48 (mono chars ~2x tall as wide)
 
 
 def load_and_prep(path):
